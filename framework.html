@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework | Korren Penney</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="playReadAloud.js"></script>
+    <script src="main.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Korren Penney</h1>
+            <!-- Hamburger Button -->
+            <button class="nav-toggle" id="menuToggle">☰</button>
+            <nav id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="executive-statement.html">Executive Statement</a>
+                <a href="foundation.html">Foundation</a>
+                <a href="framework.html" class="active">Framework</a>
+                <a href="philosophy-statement.html">Philosophy</a>
+                <a href="evidence.html">Practice in Action</a>
+                <a href="epilogue.html">Epilogue</a>
+            </nav>
+            <div class="progress-container">
+                <ul class="progress-bar">
+                    <li class="completed">The Site Map</li>
+                    <li class="completed">The Vision</li>
+                    <li class="completed">The Footings</li>
+                    <li class="active">The Scaffolding</li>
+                    <li>The Interior Design</li>
+                    <li>The Open House</li>
+                    <li>The Final Inspection</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- start read alound from here -->
+    <div class="read-aloud">
+        <section class="hero">
+            <div class="container">
+                <h2>Framework</h2>
+                <p>How my teaching practice is structured and put into action.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="content-wrapper">
+
+                <main class="main-content">
+
+                    <h2>My Teaching Framework</h2>
+
+                    <p class="drop-cap">
+                        This section outlines the framework that guides my teaching practice. It represents how I move
+                        from my beliefs about
+                        learning into the decisions I make when designing and facilitating learning experiences.
+                    </p>
+
+                    <div class="measurement-line">Approach to Learning</div>
+                    <p>
+                        My approach is grounded in applied, learner-centered education. I prioritize hands-on,
+                        problem-based learning that
+                        allows learners to actively engage with content and develop skills they can use beyond the
+                        classroom.
+                    </p>
+
+                    <div class="measurement-line">Design Strategies</div>
+                    <p>
+                        I design learning experiences that connect to real-world contexts and challenges. This ensures
+                        that learning is relevant
+                        and supports learners in applying their knowledge in practical ways.
+                    </p>
+
+                    <div class="measurement-line">Learner Support</div>
+                    <p>
+                        I create structured, supportive environments where learners can progress with confidence. This
+                        includes clear expectations,
+                        consistent guidance, and responsiveness to individual needs.
+                    </p>
+
+                    <div class="measurement-line">Technology in Practice</div>
+                    <p>
+                        Technology is used as a tool to support learning, not as an end goal. I focus on helping
+                        learners build both technical
+                        skills and the confidence to apply them in meaningful ways.
+                    </p>
+
+                    <div class="measurement-line">Accessibility & Inclusion</div>
+                    <p>
+                        Accessibility and inclusion are embedded throughout my practice. I design with an awareness of
+                        how instructional choices can
+                        either create barriers or open pathways for participation.
+                    </p>
+
+                </main>
+
+                <aside class="sidebar">
+                    <h3>In Practice</h3>
+                    <p>
+                        This framework reflects how I support adult learners in building skills that are directly
+                        connected to their goals, while creating learning environments that are structured, inclusive,
+                        and responsive.
+                    </p>
+                    <br>
+                    <h3>From Practice to Philosophy</h3>
+                    <p>
+                        The approaches and strategies in this framework reflect how I currently teach.
+                        However, they are grounded in a deeper set of beliefs about learning, experience,
+                        and the role of the educator. These beliefs are explored more fully in my philosophy.
+                    </p>
+                    <a href="philosophy-statement.html" class="sidebar-button">
+                        Explore My Philosophy →</a>
+                        <!-- IMAGE -->
+                        <div class="lens-image">
+                            <img src="images/Mischief-Study.jpg"
+                                alt="This image is one of Mischief my Mini Schnauzer trying her best to help me with my studies.">
+                            <p class="image-caption">
+                                This image is one of Mischief my Mini Schnauzer trying her best to help me with my
+                                studies. It represents the importance of support and companionship in learning. Just as
+                                Mischief provides comfort and motivation, I believe that creating supportive learning
+                                environments is essential for helping learners navigate challenges and build confidence. Mischief 
+                                learns best through osmosis.
+                            </p>
+                        </div>
+                </aside>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end read aloud from here -->
+    <div class="audio-guide-controls">
+        <span class="phase-tag">Audio Tour Guide</span>
+        <div class="button-group">
+            <button onclick="playReadAloud()">▶ Play</button>
+            <button onclick="pauseReadAloud()">⏸ Pause</button>
+            <button onclick="stopReadAloud()">⏹ Stop</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Korren Penney's Portfolio</p>
+    </footer>
+</body>
+
+</html>

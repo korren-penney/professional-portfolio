@@ -1,0 +1,63 @@
+/* --- Staggered Timeline Layout --- */
+.timeline.staggered-layout {
+    display: flex;
+    flex-direction: column;
+    /* Removed gap here to let the backgrounds touch if desired, 
+       or keep it for a 'card' look */
+    gap: 20px; 
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 30px; /* Added padding so the background doesn't hug the text */
+    border-radius: 12px; /* Smooth corners for the colored blocks */
+    transition: background-color 0.3s ease;
+}
+
+/* Target rows where the image is on the right (1st, 3rd, 5th...) */
+.timeline-item.text-left {
+    background-color: #e3f2fd; /* Light blue background */
+    border: 1px solid #bbdefb; /* Optional: subtle border to define the edges */
+}
+
+/* Ensure the layout looks clean on the white rows too */
+.timeline-item.image-left {
+    background-color: transparent; 
+}
+
+/* Control content widths */
+.timeline-text {
+    flex: 3;
+}
+
+.timeline-visuals {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-visuals img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    /* On mobile, we might want to keep the blue background 
+       but the "image on the right" doesn't exist anymore as they stack */
+    .timeline-visuals {
+        order: -1; /* Puts image above text on mobile for better flow */
+    }
+}
