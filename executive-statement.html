@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <div class="container">
             <h1>Korren Penney</h1>
@@ -57,7 +57,7 @@
             <div class="content-wrapper">
 
                 <!-- MAIN CONTENT -->
-                <main class="main-content">
+                <main class="main-content" id="main-content">
                     <article class="statement-card">
 
                         <h2>Professional Vision</h2>
@@ -137,7 +137,7 @@
                         <!-- IMAGE -->
                         <div class="lens-image">
                             <img src="images/quidi-vidi-village.jpg"
-                                alt="This image I took in the Quidi Vidi village in St. John's, NL, with a focus on the gulls on the bank">
+                                alt="This image is of gulls on the bank in the Quidi Vidi village in St. John's, NL">
                             <p class="image-caption">
                                 This image I took in the Quidi Vidi village in St. John's, NL, with a focus on the gulls
                                 on the bank. It illustrates the idea of perspective and how my lens as an educator is
@@ -155,9 +155,9 @@
     <div class="audio-guide-controls">
         <span class="phase-tag">Audio Tour Guide</span>
         <div class="button-group">
-            <button onclick="playReadAloud()">▶ Play</button>
-            <button onclick="pauseReadAloud()">⏸ Pause</button>
-            <button onclick="stopReadAloud()">⏹ Stop</button>
+            <button onclick="playReadAloud()" aria-label="Play audio narration">▶ Play</button>
+            <button onclick="pauseReadAloud()" aria-label="Pause audio narration">⏸ Pause</button>
+            <button onclick="stopReadAloud()" aria-label="Stop audio narration">⏹ Stop</button>
         </div>
     </div>
     <footer>

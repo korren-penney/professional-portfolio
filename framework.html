@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <div class="container">
             <h1>Korren Penney</h1>
@@ -51,50 +52,44 @@
         <div class="container">
             <div class="content-wrapper">
 
-                <main class="main-content">
+                <main class="main-content" id="main-content">
 
                     <h2>My Teaching Framework</h2>
 
                     <p class="drop-cap">
                         This section outlines the framework that guides my teaching practice. It represents how I move
-                        from my beliefs about
-                        learning into the decisions I make when designing and facilitating learning experiences.
+                        from my beliefs about learning into the decisions I make when designing and facilitating learning experiences.
                     </p>
 
                     <div class="measurement-line">Approach to Learning</div>
                     <p>
                         My approach is grounded in applied, learner-centered education. I prioritize hands-on,
-                        problem-based learning that
-                        allows learners to actively engage with content and develop skills they can use beyond the
-                        classroom.
+                        problem-based learning that allows learners to actively engage with content and develop skills they can use 
+                        beyond the classroom.
                     </p>
 
                     <div class="measurement-line">Design Strategies</div>
                     <p>
                         I design learning experiences that connect to real-world contexts and challenges. This ensures
-                        that learning is relevant
-                        and supports learners in applying their knowledge in practical ways.
+                        that learning is relevant and supports learners in applying their knowledge in practical ways.
                     </p>
 
                     <div class="measurement-line">Learner Support</div>
                     <p>
                         I create structured, supportive environments where learners can progress with confidence. This
-                        includes clear expectations,
-                        consistent guidance, and responsiveness to individual needs.
+                        includes clear expectations, consistent guidance, and responsiveness to individual needs.
                     </p>
 
                     <div class="measurement-line">Technology in Practice</div>
                     <p>
                         Technology is used as a tool to support learning, not as an end goal. I focus on helping
-                        learners build both technical
-                        skills and the confidence to apply them in meaningful ways.
+                        learners build both technical skills and the confidence to apply them in meaningful ways.
                     </p>
 
                     <div class="measurement-line">Accessibility & Inclusion</div>
                     <p>
                         Accessibility and inclusion are embedded throughout my practice. I design with an awareness of
-                        how instructional choices can
-                        either create barriers or open pathways for participation.
+                        how instructional choices can either create barriers or open pathways for participation.
                     </p>
 
                 </main>
@@ -137,9 +132,9 @@
     <div class="audio-guide-controls">
         <span class="phase-tag">Audio Tour Guide</span>
         <div class="button-group">
-            <button onclick="playReadAloud()">▶ Play</button>
-            <button onclick="pauseReadAloud()">⏸ Pause</button>
-            <button onclick="stopReadAloud()">⏹ Stop</button>
+            <button onclick="playReadAloud()" aria-label="Play audio narration">▶ Play</button>
+            <button onclick="pauseReadAloud()" aria-label="Pause audio narration">⏸ Pause</button>
+            <button onclick="stopReadAloud()" aria-label="Stop audio narration">⏹ Stop</button>
         </div>
     </div>
     <footer>

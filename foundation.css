@@ -61,3 +61,30 @@
         order: -1; /* Puts image above text on mobile for better flow */
     }
 }
+/* DESKTOP LAYOUT */
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.main-content {
+    flex: 3;
+    min-width: 0;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width: 900px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}

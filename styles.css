@@ -4,7 +4,7 @@
    ============================================================ */
 :root {
     --primary-blue: #5e3bee;
-    --blueprint-line: #a5b4fc;
+    --blueprint-line: #7c8cf5;
     --text-dark: #1c1c1c;
     --text-muted: #555555;
     --bg-light: #f9f9fb;
@@ -20,7 +20,7 @@
 
 body {
     font-family: var(--font-main);
-    color: var(--text-muted);
+    color: var(--text-dark);
     line-height: 1.7;
     background-color: var(--white);
     overflow-x: hidden;
@@ -66,6 +66,11 @@ nav a {
 }
 
 nav a:hover,
+nav a:focus {
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--primary-blue);
+    text-decoration: underline;
+}
 nav a.active {
     color: var(--primary-blue);
     border-bottom: 2px solid var(--primary-blue);
@@ -100,10 +105,10 @@ nav a.active {
 .progress-bar li {
     position: relative;
     z-index: 2;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     font-weight: 700;
-    color: #bbb;
+    color: #555;
     flex: 1;
     text-align: center;
 }
@@ -121,6 +126,7 @@ nav a.active {
 
 .progress-bar li.active {
     color: var(--primary-blue);
+    font-weight: 700;
 }
 
 .progress-bar li.active::before {
@@ -136,7 +142,7 @@ nav a.active {
 /* --- Hero & Blueprint Grid --- */
 .hero {
     background-color: var(--bg-light);
-    background-image: linear-gradient(rgba(165, 180, 252, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(165, 180, 252, 0.1) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(124, 140, 245, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(124, 140, 245, 0.15) 1px, transparent 1px);
     background-size: 20px 20px;
     padding: 60px 0;
     text-align: center;
@@ -390,7 +396,7 @@ footer {
 /* caption */
 .image-caption {
     font-size: 0.85rem;
-    color: #555;
+    color: #444;
     line-height: 1.4;
 }
 
@@ -486,6 +492,9 @@ footer {
 
 .button-group button:hover {
     background: var(--text-dark);
+}
+.button-group button:focus-visible {
+    outline: 3px solid #0b5fff;
 }
 
 /* --- COLLAPSED STATE --- */
@@ -777,4 +786,38 @@ body.loaded .fade-in {
 .small-slider em {
     display: block;
     margin-top: 4px;
+}
+/* GLOBAL FOCUS STYLES */
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 3px solid #0b5fff;
+    outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #fff;
+    color: #000;
+    padding: 8px 12px;
+    z-index: 1000;
+    border: 2px solid #fff;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start; /* THIS fixes your aside alignment */
 }

@@ -12,13 +12,16 @@
 </head>
 
 <body>
-
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <div class="container">
             <h1>Korren Penney</h1>
             <!-- Hamburger Button -->
-            <button class="nav-toggle" id="menuToggle">☰</button>
+            <button class="nav-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
             <nav id="navMenu">
+
                 <a href="index.html">Home</a>
                 <a href="executive-statement.html">Executive Statement</a>
                 <a href="foundation.html">Foundation</a>
@@ -26,10 +29,11 @@
                 <a href="philosophy-statement.html">Philosophy</a>
                 <a href="evidence.html">Evidence</a>
                 <a href="epilogue.html">Epilogue</a>
+
             </nav>
             <div class="progress-container">
-                <ul class="progress-bar">
-                    <li class="active">The Site Map</li>
+                <ul class="progress-bar" aria-label="Portfolio progress">
+                    <li class="active" aria-current="step">The Site Map</li>
                     <li>The Vision</li>
                     <li>The Footings</li>
                     <li>The Scaffolding</li>
@@ -40,65 +44,65 @@
             </div>
         </div>
     </header>
-    <!-- start read alound from here -->
-    <div class="read-aloud">
-        <section class="hero">
-            <div class="container">
-                <h2>Building My Practice as an Adult Educator</h2>
-                <p>
-                    A reflective journey through the Master of Adult Education (MAdEd) program at Saint Francis Xavier
-                    University (StFX).
-                </p>
-            </div>
-        </section>
 
-        <div class="container">
-            <div class="content-wrapper">
-                <main class="main-content">
-                    <h2>Welcome</h2>
+        <!-- start read alound from here -->
+        <div class="read-aloud">
+            <section class="hero">
+                <div class="container">
+                    <h2>Building My Practice as an Adult Educator</h2>
                     <p>
-                        This portfolio presents my growth as an adult educator through reflection, evidence, and
-                        critical analysis. It is organized
-                        using a house-building metaphor to illustrate the ongoing development of my practice.
+                        A reflective journey through the Master of Adult Education (MAdEd) program at Saint Francis
+                        Xavier University (StFX).
                     </p>
-                    <br>
-                    <p>
-                        Each section represents a critical phase of constructing a house, from the underlying
-                        philosophical foundation to the final structural
-                        framework and the evidence of the work within.
-                    </p>
-                </main>
-                <aside class="sidebar">
-                    <h3>My Focus</h3>
-                    <p>
-                        My portfolio represents my development as an adult educator who supports adult learners in
-                        navigating transitions by making technology education accessible, practical, and meaningful,
-                        with a focus on applied,
-                        career-oriented learning that leads to personal and professional growth.
-                    </p>
-                    <!-- IMAGE -->
-                    <div class="lens-image">
-                        <img src="images/nl-flag.png"
-                            alt="This image is one of the Newfoundland & Labrador flag I took in the Quidi Vidi village in St. John's, NL">
-                        <p class="image-caption">
-                            This image is one of the Newfoundland & Labrador flag I took in the Quidi Vidi village in
-                            St. John's, NL. It represents the importance of place and context in shaping my perspective
-                            as an educator. Just as the flag symbolizes the unique identity of Newfoundland & Labrador,
-                            my experiences as a Newfoundlander have deeply influenced how I understand learners and design
-                            educational experiences that are relevant and meaningful to their lives. I took this picture as 
-                            part of my therapy joureny after my PTSD diagnosis. 
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="content-wrapper">
+                    <main class="main-content" id="main-content">
+                        <h2>Welcome</h2>
+                        <p>
+                            This portfolio presents my growth as an adult educator through reflection, evidence, and
+                            critical analysis. It is organized using a house-building metaphor to illustrate the ongoing 
+                            development of my practice.
                         </p>
-                    </div>
-                </aside>
+                        <br>
+                        <p>
+                            Each section represents a critical phase of constructing a house, from the underlying
+                            philosophical foundation to the final structural framework and the evidence of the work within.
+                        </p>
+                    </main>
+                    <aside class="sidebar">
+                        <h3>My Focus</h3>
+                        <p>
+                            My portfolio represents my development as an adult educator who supports adult learners in
+                            navigating transitions by making technology education accessible, practical, and meaningful,
+                            with a focus on applied, career-oriented learning that leads to personal and professional growth.
+                        </p>
+                        <!-- IMAGE -->
+                        <div class="lens-image">
+                            <img src="images/nl-flag.png"
+                                alt="This image is one of the Newfoundland & Labrador flag">
+                            <p class="image-caption">
+                                This image is one of the Newfoundland & Labrador flag I took in the Quidi Vidi village
+                                in St. John's, NL. It represents the importance of place and context in shaping my
+                                perspective as an educator. Just as the flag symbolizes the unique identity of Newfoundland &
+                                Labrador, my experiences as a Newfoundlander have deeply influenced how I understand learners and
+                                design educational experiences that are relevant and meaningful to their lives. I took this
+                                picture as part of my therapy journey after my PTSD diagnosis.
+                            </p>
+                        </div>
+                    </aside>
+                </div>
             </div>
-        </div>
-    </div> <!-- end read aloud from here -->
+        </div> <!-- end read aloud from here -->
+
     <div class="audio-guide-controls">
         <span class="phase-tag">Audio Tour Guide</span>
         <div class="button-group">
-            <button onclick="playReadAloud()">▶ Play</button>
-            <button onclick="pauseReadAloud()">⏸ Pause</button>
-            <button onclick="stopReadAloud()">⏹ Stop</button>
+            <button onclick="playReadAloud()" aria-label="Play audio narration">▶ Play</button>
+            <button onclick="pauseReadAloud()" aria-label="Pause audio narration">⏸ Pause</button>
+            <button onclick="stopReadAloud()" aria-label="Stop audio narration">⏹ Stop</button>
         </div>
     </div>
     <footer>

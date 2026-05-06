@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <div class="container">
             <h1>Korren Penney</h1>
@@ -51,7 +52,7 @@
             <div class="content-wrapper">
 
                 <!-- MAIN CONTENT -->
-                <main class="main-content">
+                <main class="main-content" id="main-content">
 
                     <h2>Final Walkthrough</h2>
 
@@ -135,9 +136,9 @@
     <div class="audio-guide-controls">
         <span class="phase-tag">Audio Tour Guide</span>
         <div class="button-group">
-            <button onclick="playReadAloud()">▶ Play</button>
-            <button onclick="pauseReadAloud()">⏸ Pause</button>
-            <button onclick="stopReadAloud()">⏹ Stop</button>
+            <button onclick="playReadAloud()" aria-label="Play audio narration">▶ Play</button>
+            <button onclick="pauseReadAloud()" aria-label="Pause audio narration">⏸Pause</button>
+            <button onclick="stopReadAloud()" aria-label="Stop audio narration">⏹ Stop</button>
         </div>
     </div>
     <footer>
