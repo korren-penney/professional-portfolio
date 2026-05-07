@@ -821,3 +821,46 @@ body.loaded .fade-in {
     gap: 2rem;
     align-items: flex-start; /* THIS fixes your aside alignment */
 }
+/* ==========================================================
+   GLOBAL TYPOGRAPHY SPACING
+========================================================== */
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+/* ==========================================================
+   Reflection Section
+========================================================== */
+
+.reflection-section {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #f8f6f2;
+    border-left: 6px solid var(--primary-blue);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.reflection-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.reflection-section p {
+    line-height: 1.8;
+}
