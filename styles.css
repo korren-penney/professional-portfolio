@@ -864,3 +864,36 @@ section {
 .reflection-section p {
     line-height: 1.8;
 }
+/* ============================================================
+   Reflective Quote Section
+   ============================================================ */
+
+.reflection-quote {
+    margin: 4rem auto;
+    padding: 2rem;
+    max-width: 850px;
+
+    background: rgba(255, 255, 255, 0.75);
+    border-left: 5px solid var(--primary-blue);
+
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
+    font-style: italic;
+    line-height: 1.9;
+    color: var(--text-dark);
+}
+
+.reflection-quote p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.reflection-quote cite {
+    display: block;
+    text-align: right;
+
+    font-style: normal;
+    font-weight: 600;
+    color: var(--text-muted);
+}
