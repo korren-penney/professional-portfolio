@@ -897,3 +897,47 @@ section {
     font-weight: 600;
     color: var(--text-muted);
 }
+/* ============================================================
+   Footer
+   ============================================================ */
+
+.site-footer {
+    margin-top: 5rem;
+    padding: 2rem 1rem;
+    background: #f8f9fc;
+    border-top: 1px solid #d8dce5;
+    text-align: center;
+}
+
+.audio-guide-controls {
+    margin-bottom: 1.5rem;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+
+    margin-bottom: 1rem;
+}
+
+.footer-contact a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+
+.footer-credit {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+}

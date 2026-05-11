@@ -160,9 +160,27 @@
             <button onclick="stopReadAloud()" aria-label="Stop audio narration">⏹ Stop</button>
         </div>
     </div>
-    <footer>
-        <p>&copy; <span id="year"></span> Korren Penney's Portfolio</p>
-    </footer>
+<footer class="site-footer">
+
+    <div class="footer-contact">
+        <a href="mailto:korrenp@gmail.com">
+            Email
+        </a>
+
+        <span aria-hidden="true">•</span>
+
+        <a href="https://www.linkedin.com/in/korrenpenney/"
+           target="_blank"
+           rel="noopener noreferrer">
+            LinkedIn
+        </a>
+    </div>
+
+    <p class="footer-credit">
+        &copy; <span id="year"></span> Korren Penney • Master of Adult Education Portfolio
+    </p>
+
+</footer>
 
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
